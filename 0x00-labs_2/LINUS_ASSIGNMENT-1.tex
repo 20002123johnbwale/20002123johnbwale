@@ -1,0 +1,100 @@
+\documentclass{article}
+\author{JOHN BWALE}
+\date{22,september-2023}
+\begin{document}
+
+\section*{Multiple Choice Questions}
+
+\begin{enumerate}
+    \item Which command is used to copy the last 10 lines of standard input to standard output?
+    \begin{enumerate}
+        \item \texttt{end}
+        \item \texttt{head}
+        \item \textbf{tail}
+        \item \texttt{last}
+
+    \end{enumerate}
+The correct answer is \textbf{C}.
+    
+    \item Which of these commands redirects standard input to \texttt{bc} to come from the file \texttt{abc.txt}?
+    \begin{enumerate}
+        \item \texttt{bc 2< abc.txt}
+        \item \texttt{bc < abc.txt}
+        \item \texttt{bc 2> abc.txt}
+        \item \texttt{bc > abc.txt}
+    \end{enumerate}
+    Correct Answer: B. bc <  abc.txt
+    \item What is the difference between \texttt{>} and \texttt{>>}?
+    \begin{enumerate}
+        \item \texttt{>} redirects standard input; \texttt{>>} redirects standard output
+        \item \texttt{>} redirects standard output; \texttt{>>} redirects standard error
+        \item \texttt{>} redirects standard error; \texttt{>>} redirects standard output
+        \item \texttt{>} will overwrite an existing file; \texttt{>>} will append to an existing file
+    \end{enumerate}
+    Correct Answer: D.
+    \item Which of these commands is used to remove adjacent duplicate lines?
+    \begin{enumerate}
+        \item \texttt{uniq}
+        \item \texttt{nl}
+        \item \texttt{tac}
+        \item \texttt{elemi}
+    \end{enumerate}
+    Correct Answer
+    \item Which of these commands is used to find lines from standard input that match a pattern?
+    \begin{enumerate}
+        \item \texttt{grep}
+        \item \texttt{detect}
+        \item \texttt{find}
+        \item \texttt{search}
+    \end{enumerate}
+    Correct Answer: A
+    \item To use the standard output of one command as the standard input of another command, use the symbol:
+    \begin{enumerate}
+        \item \texttt{<}
+        \item \texttt{\&}
+        \item \texttt{\$}
+        \item \texttt{|}
+    \end{enumerate}
+    Correct Answer: D
+    \item Which of these commands will count the number of lines in the file \texttt{hello.txt}?
+    \begin{enumerate}
+        \item \texttt{cat hello.txt | nl}
+        \item \texttt{cat hello.txt | tac}
+        \item \texttt{cat hello.txt | wc -l}
+        \item \texttt{cat hello.txt | head}
+    \end{enumerate}
+    Correct Answer: C
+    \item Which of these commands is used to put lines from standard input in order?
+    \begin{enumerate}
+        \item \texttt{bubble}
+        \item \texttt{sort}
+        \item \texttt{order}
+    \end{enumerate}
+    Correct Answer: B
+    \item Which of these commands will count the number of unique lines in the file \texttt{goodbye.txt}?
+    \begin{enumerate}
+        \item \texttt{cat goodbye.txt | sort | uniq | wc -l}
+        \item \texttt{cat goodbye.txt | uniq | wc -l}
+        \item \texttt{cat goodbye.txt | uniq | sort | wc -l}
+        \item \texttt{cat goodbye.txt | sort | wc -l}
+    \end{enumerate}
+    Correct Answer: B
+    \item Which of these commands will count the number of files in the current directory?
+    \begin{enumerate}
+        \item \texttt{bc | wc -l}
+        \item \texttt{cat | wc -l}
+        \item \texttt{ls | wc -l}
+        \item \texttt{head | wc -l}
+    \end{enumerate}
+    Correct Answer: C
+    \item Which of these commands appends standard error from \texttt{cat} to the end of the file \texttt{xyz.txt}?
+    \begin{enumerate}
+        \item \texttt{cat stuff.txt > xyz.txt}
+        \item \texttt{cat stuff.txt 2>> xyz.txt}
+        \item \texttt{cat stuff.txt >> xyz.txt}
+        \item \texttt{cat stuff.txt 2> xyz.txt}
+    \end{enumerate}
+    Correct Answer: C
+\end{enumerate}
+
+\end{document}

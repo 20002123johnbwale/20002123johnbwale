@@ -1,0 +1,127 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{Makefile Questions}
+\author{JOHN BWALE}
+\date{\today}
+
+\maketitle
+
+\section*{Makefile Questions}
+
+\begin{enumerate}
+    \item A makefile describes the relationship between a collection of files.
+    \begin{enumerate}
+        \item goals
+        \item order
+        \item dependencies
+        \item rules
+    \end{enumerate}
+    \textbf{Answer:} C. dependencies
+
+    \item When running make, the command line arguments should be:
+    \begin{enumerate}
+        \item Files that have changed since the last time make was run.
+        \item A list of commands that make should execute.
+        \item Files that should be updated (i.e. what you want).
+        \item Actually, make does not accept command line arguments.
+    \end{enumerate}
+    \textbf{Answer:} A. Files that have changed since the last time make was run.
+
+    \item The purpose of the make command is to:
+    \begin{enumerate}
+        \item search for and act on files in or below a directory.
+        \item execute commands to create or update files, based on the rules in a makefile.
+        \item create a new file in the current directory.
+        \item find lines that match a pattern.
+    \end{enumerate}
+    \textbf{Answer:} B. execute commands to create or update files, based on the rules in a makefile.
+
+    \item Recall this explanation for the meaning of a makefile rule: "When [blank] is changed, run the command to update [blank]." The first blank in this explanation should be:
+    \begin{enumerate}
+        \item prerequisite
+        \item recipe
+        \item target
+        \item None of the above
+    \end{enumerate}
+    \textbf{Answer:} C. target
+
+    \item Here is an example makefile rule.
+    \begin{verbatim}
+    aaa.txt: bbb.txt
+        ccc bbb.txt > aaa.txt
+    \end{verbatim}
+    In this example, the filename aaa.txt on the first line is the rule's:
+    \begin{enumerate}
+        \item recipe
+        \item prerequisite
+        \item target
+        \item None of the above
+    \end{enumerate}
+    \textbf{Answer:} C. target
+
+    \item Recall this explanation for the meaning of a makefile rule: "When [blank] is changed, run the command to update [blank]." The second blank in this explanation should be:
+    \begin{enumerate}
+        \item target
+        \item prerequisite
+        \item recipe
+        \item None of the above
+    \end{enumerate}
+    \textbf{Answer:} B. prerequisite
+
+    \item Recall this explanation for the meaning of a makefile rule: "When [blank] is changed, run the command to update [blank]." The third blank in this explanation should be:
+    \begin{enumerate}
+        \item recipe
+        \item prerequisite
+        \item target
+        \item None of the above
+    \end{enumerate}
+    \textbf{Answer:} A. recipe
+
+    \item Here is an example makefile rule.
+    \begin{verbatim}
+    aaa.txt: bbb.txt
+        ccc bbb.txt > aaa.txt
+    \end{verbatim}
+    In this example, when does make execute the command on the second line?
+    \begin{enumerate}
+        \item when bbb.txt is older than aaa.txt
+        \item when bbb.txt is newer than aaa.txt
+        \item when ccc cannot be found
+        \item when bbb.txt does not exist
+    \end{enumerate}
+    \textbf{Answer:} B. when bbb.txt is newer than aaa.txt
+
+    \item The purpose of the touch command is to:
+    \begin{enumerate}
+        \item Change a file's owner to be the current user.
+        \item Show a file's access history.
+        \item Change a file's modification time to the current time.
+        \item Show a file's permissions.
+    \end{enumerate}
+    \textbf{Answer:} C. Change a file's modification time to the current time.
+
+    \item Here is an example makefile rule.
+    \begin{verbatim}
+    aaa.txt: bbb.txt
+        ccc bbb.txt > aaa.txt
+    \end{verbatim}
+    In this example, the command \texttt{ccc bbb.txt > aaa.txt} is the rule's:
+    \begin{enumerate}
+        \item recipe
+        \item target
+        \item prerequisite
+        \item None of the above
+    \end{enumerate}
+    \textbf{Answer:} A. recipe
+
+    \item Here is an example makefile rule.
+    \begin{verbatim}
+    aaa.txt: bbb.txt
+        ccc bbb.txt > aaa.txt
+    \end{verbatim}
+    In this example, the filename bbb.txt on the
+\end{enumerate}
+
+\end{document}

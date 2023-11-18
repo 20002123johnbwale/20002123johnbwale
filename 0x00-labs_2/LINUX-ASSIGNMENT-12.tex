@@ -1,0 +1,108 @@
+\documentclass{article}
+
+\begin{document}
+
+\section*{Shell Scripting Questions}
+
+\begin{enumerate}
+  \item The purpose of the \texttt{-x} shell option, enabled with \texttt{set -x}, is to:
+  \begin{enumerate}[label=(\Alph*)]
+    \item print each command as given
+    \item stop the script when an error occurs
+    \item print each command after expansion
+    \item prevent overwriting of files by redirection
+  \end{enumerate}
+  \textbf{Answer: (C) print each command after expansion}
+
+  \item The conditional \texttt{if [ "\$a" == b ]; then} tests whether:
+  \begin{enumerate}[label=(\Alph*)]
+    \item Two processes are running the same program.
+    \item Two files have the same modification date.
+    \item Two files have the same contents.
+    \item Two strings are equal.
+  \end{enumerate}
+  \textbf{Answer: (D) Two strings are equal}
+
+  \item The conditional \texttt{if [ -a "\$file" ]; then} tests whether:
+  \begin{enumerate}[label=(\Alph*)]
+    \item A file is a hidden file.
+    \item A file has been accessed.
+    \item A file is readable by all users.
+    \item A file exists.
+  \end{enumerate}
+  \textbf{Answer: (D) A file exists}
+
+  \item The conditional \texttt{if [ "\$file1" -nt "\$file2" ]; then} tests whether:
+  \begin{enumerate}[label=(\Alph*)]
+    \item One file is neater than another.
+    \item One file depends on another.
+    \item One file is newer than another.
+    \item One file is larger than another.
+  \end{enumerate}
+  \textbf{Answer: (C) One file is newer than another}
+
+  \item The purpose of the \texttt{-v} shell option, enabled with \texttt{set -v}, is to:
+  \begin{enumerate}[label=(\Alph*)]
+    \item print each command after expansion
+    \item stop the script when an error occurs
+    \item print each command as given
+    \item prevent overwriting of files by redirection
+  \end{enumerate}
+  \textbf{Answer: (C) print each command as given}
+
+  \item The purpose of the \texttt{-e} shell option, enabled with \texttt{set -e}, is to:
+  \begin{enumerate}[label=(\Alph*)]
+    \item print each command after expansion
+    \item print each command as given
+    \item prevent overwriting of files by redirection
+    \item stop the script when an error occurs
+  \end{enumerate}
+  \textbf{Answer: (D) stop the script when an error occurs}
+
+  \item In a directory containing the files \texttt{a.txt}, \texttt{b.txt}, \texttt{c.java}, and \texttt{d.cpp}, how many iterations will the loop \texttt{for f in *.txt; do} execute?
+  \begin{enumerate}[label=(\Alph*)]
+    \item 4
+    \item 2
+    \item 3
+    \item 1
+  \end{enumerate}
+  \textbf{Answer: (B) 2 iterations}
+
+  \item In a directory containing the files \texttt{a.txt}, \texttt{b.txt}, \texttt{c.java}, and \texttt{d.cpp}, how many iterations will the loop \texttt{for f in \$(find -name *java); do} execute?
+  \begin{enumerate}[label=(\Alph*)]
+    \item 1
+    \item 2
+    \item 4
+    \item 3
+  \end{enumerate}
+  \textbf{Answer: (C) 4 iterations}
+
+  \item The purpose of the \texttt{set} command is to:
+  \begin{enumerate}[label=(\Alph*)]
+    \item enable shell options
+    \item assign values to shell variables
+    \item assign values to environment variables
+    \item set permissions on files
+  \end{enumerate}
+  \textbf{Answer: (A) enable shell options}
+
+  \item The conditional \texttt{if command; then} tests whether:
+  \begin{enumerate}[label=(\Alph*)]
+    \item The command runs successfully, with a zero return code.
+    \item The command is the name of the currently-running script.
+    \item The command is running in the background.
+    \item The command exists.
+  \end{enumerate}
+  \textbf{Answer: (A) The command runs successfully, with a zero return code.}
+
+  \item The conditional \texttt{if [ -z "\$a" ]; then} tests whether:
+  \begin{enumerate}[label=(\Alph*)]
+    \item A jobs list is empty.
+    \item A file is empty.
+    \item A string is empty.
+    \item A process list is empty.
+  \end{enumerate}
+  \textbf{Answer: (C) A string is empty.}
+\end{enumerate}
+
+\end{document}

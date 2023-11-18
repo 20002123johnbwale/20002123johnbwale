@@ -1,0 +1,212 @@
+\documentclass{article}
+\begin{document}
+\title{Sample Final Exam}
+\author{JOHN BWALE}
+\date{\today}
+\maketitle
+
+\section{Multiple Choice Questions}
+
+\begin{enumerate}
+    \item Which of these commands will use command substitution to copy the executable for the program grep to the current directory?
+    \begin{enumerate}
+        \item \verb|cp ?(grep) .|
+        \item \verb|cp (which grep) .|
+        \item \verb|cp $(grep) .|
+        \item \verb|cp $(which grep) .|
+    \end{enumerate}
+    \textbf{Answer:} D. \verb|cp $(which grep) .|
+
+    \item In a directory containing many kinds of files, which of these commands will display at most 10 files with the extension cpp?
+    \begin{enumerate}
+        \item \verb|ls ?.cpp | head|
+        \item \verb|ls .cpp | head|
+        \item \verb|ls *.cpp | head|
+        \item \verb|ls *.cpp | tac|
+    \end{enumerate}
+    \textbf{Answer:} C. \verb|ls *.cpp | head|
+
+    \item Which of these files would be listed by the command \verb|ls a b c d e f|?
+    \begin{enumerate}
+        \item Six files named a, b, c, d, e, and f.
+        \item A single file named 'a b c d e f g', with 5 spaces in its name.
+        \item Two files, one named 'a b c' and one named 'd e f', each with two spaces in its name.
+        \item None of the above.
+    \end{enumerate}
+    \textbf{Answer:} D. None of the above.
+
+    \item Which symbol is used to force the next character to be treated normally?
+    \begin{enumerate}
+        \item \verb|`|
+        \item \verb|?|
+        \item \verb|\|
+        \item \verb|/|
+    \end{enumerate}
+    \textbf{Answer:} C. \verb|\|
+
+    \item For the command \verb|ls hi.?| which files would be listed?
+    \begin{enumerate}
+        \item \verb|hi.java|
+        \item \verb|hi.py|
+        \item \verb|hi.|
+        \item \verb|hi.c|
+    \end{enumerate}
+    \textbf{Answer:} A. \verb|hi.java| and B. \verb|hi.py|
+
+    \item Which of these commands will list all of the files whose name contains an opening parenthesis?
+    \begin{enumerate}
+        \item \verb|ls *(*|
+        \item \verb|ls *\(\*|
+        \item \verb|ls *\(*|
+        \item \verb|ls (|
+    \end{enumerate}
+    \textbf{Answer:} B. \verb|ls *\(\*|
+
+    \item Which of these files would be listed by the command \verb|ls hello.*|?
+    \begin{enumerate}
+        \item \verb|hello.py|
+        \item \verb|hello.csharp|
+        \item \verb|hello.cpp|
+        \item All of the above.
+    \end{enumerate}
+    \textbf{Answer:} D. All of the above.
+
+    \item What would the effect of the command \verb|ls *.c| be?
+    \begin{enumerate}
+        \item To list all files whose names consist of exactly one character, followed by a period, followed by a \verb|c|.
+        \item To list all files with a \verb|c| extension.
+        \item To list all files whose names do not contain a \verb|c|.
+        \item To list all files whose names contain a \verb|c|.
+    \end{enumerate}
+    \textbf{Answer:} B. To list all files with a \verb|c| extension.
+
+    \item Which of these files would be listed by the command \verb|ls a\ b\ c\ d\ e\ f|, which has a space after each of its backslashes?
+    \begin{enumerate}
+        \item Six files named a, b, c, d, e, and f.
+        \item A single file named 'a b c d e f', with 5 spaces in its name.
+        \item Two files, one named 'a b c' and one named 'd e f', each with two spaces in its name.
+        \item None of the above.
+    \end{enumerate}
+    \textbf{Answer:} A. Six files named a, b, c, d, e, and f.
+
+    \item Which of the following is not a valid way to write a comment in Python?
+    \begin{enumerate}
+        \item \verb|# This is a comment|
+        \item \verb|// This is a comment|
+        \item \verb|'''This is a comment'''|
+        \item \verb|"This is a comment"|
+    \end{enumerate}
+    \textbf{Answer:} B. \verb|// This is a comment|
+
+    \item What will be the output of the following Python code?
+
+    \begin{verbatim}
+    def my_func(x):
+        if x < 0:
+            return "Negative"
+        elif x == 0:
+            return "Zero"
+        else:
+            return "Positive"
+
+    print(my_func(10))
+    \end{verbatim}
+
+    \begin{enumerate}
+        \item Negative
+        \item Zero
+        \item Positive
+        \item Error: Invalid function call
+    \end{enumerate}
+    \textbf{Answer:} C. Positive
+
+    \item Which of the following data types in Python is mutable?
+    \begin{enumerate}
+        \item int
+        \item str
+        \item list
+        \item tuple
+    \end{enumerate}
+    \textbf{Answer:} C. list
+
+    \item What is the output of the following Python code?
+
+    \begin{verbatim}
+    my_list = [1, 2, 3, 4, 5]
+    print(my_list[1:3])
+    \end{verbatim}
+
+    \begin{enumerate}
+        \item [1, 2]
+        \item [2, 3]
+        \item [2, 3, 4]
+        \item [1, 3]
+    \end{enumerate}
+    \textbf{Answer:} B. [2, 3]
+
+    \item Which of the following is the correct syntax to open a file named "data.txt" in Python for reading?
+    \begin{enumerate}
+        \item \verb|file = open("data.txt", "r")|
+        \item \verb|file = open("data.txt", "w")|
+        \item \verb|file = open("data.txt", "a")|
+        \item \verb|file = open("data.txt", "x")|
+    \end{enumerate}
+    \textbf{Answer:} A. \verb|file = open("data.txt", "r")|
+
+    \item What is the output of the following Python code?
+
+    \begin{verbatim}
+    my_dict = {"apple": 1, "banana": 2, "cherry": 3}
+    del my_dict["banana"]
+    print(len(my_dict))
+    \end{verbatim}
+
+    \begin{enumerate}
+        \item 0
+        \item 1
+        \item 2
+        \item 3
+    \end{enumerate}
+    \textbf{Answer:} C. 2
+
+    \item Which of the following is the correct way to define a class named "Person" in Python with a constructor that takes two parameters: "name" and "age"?
+    \begin{enumerate}
+        \item 
+        \begin{verbatim}
+        class Person:
+            def __init__(self, name, age):
+                self.name = name
+                self.age = age
+        \end{verbatim}
+        \item 
+        \begin{verbatim}
+        class Person(name, age):
+            def __init__(self, name, age):
+                self.name = name
+                self.age = age
+        \end{verbatim}
+        \item 
+        \begin{verbatim}
+        class Person:
+            def __init__(name, age):
+                self.name = name
+                self.age = age
+        \end{verbatim}
+        \item 
+        \begin{verbatim}
+        class Person:
+            def __init__(self):
+                self.name = name
+                self.age = age
+        \end{verbatim}
+    \end{enumerate}
+    \textbf{Answer:} A. 
+    \begin{verbatim}
+    class Person:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+    \end{verbatim}
+\end{enumerate}
+
+\end{document}
